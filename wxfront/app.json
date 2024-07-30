@@ -1,10 +1,15 @@
 {
-  "pages": ["pages/index/index"],
+  "pages": [
+    "pages/index/index",
+    "pages/strategy/strategy",
+    "pages/activity/activity",
+    "pages/friend/friend",
+    "pages/myself/myself"
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
   },
-  "style": "v2",
   "renderer": "skyline",
   "rendererOptions": {
     "skyline": {
@@ -20,5 +25,43 @@
   "usingComponents": {
     "van-tabbar": "@vant/weapp/tabbar/index",
     "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/strategy/strategy",
+        "text": "攻略路线",
+        "iconPath": "images/icons/icon_strategy.png",
+        "selectedIconPath": "images/icons/icon_strategy_light.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "活动",
+        "iconPath": "images/icons/icon_activity.png",
+        "selectedIconPath": "images/icons/icon_activity_light.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icons/icon_index.png",
+        "selectedIconPath": "images/icons/icon_index_light.png"
+      },
+      {
+        "pagePath": "pages/friend/friend",
+        "text": "好友",
+        "iconPath": "images/icons/icon_friend.png",
+        "selectedIconPath": "images/icons/icon_friend_light.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "个人主页",
+        "iconPath": "images/icons/icon_myself.png",
+        "selectedIconPath": "images/icons/icon_myself.png"
+      }
+    ]
   }
 }
