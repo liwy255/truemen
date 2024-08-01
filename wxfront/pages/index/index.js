@@ -1,2 +1,7 @@
 // index.js
-Page({})
+Page({
+  data: {},
+  onShow() {
+    this.getTabBar().init();
+  },
+});
