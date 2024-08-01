@@ -1,0 +1,17 @@
+<!--pages/login/login.wxml-->
+<!-- <text>pages/login/login.wxml</text> -->
+<!-- pages/login/login.wxml -->
+<view class="container">
+  <!-- <image src="/images/logo.png" mode="aspectFill" class="logo"></image> -->
+  <view class="form">
+    <view class="input-group">
+      <text class="iconfont icon-user"></text>
+      <input type="text" placeholder="请输入用户名" bindinput="handleUsernameChange" />
+    </view>
+    <view class="input-group">
+      <text class="iconfont icon-lock"></text>
+      <input type="password" placeholder="请输入密码" bindinput="handlePasswordChange" />
+    </view>
+    <button bindtap="handleLogin" class="login-button">登录</button>
+  </view>
+</view>

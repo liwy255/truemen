@@ -4,7 +4,9 @@
     "pages/strategy/strategy",
     "pages/activity/activity",
     "pages/friend/friend",
-    "pages/myself/myself"
+    "pages/myself/myself",
+    "pages/login/login"
+    
   ],
   "window": {
     "navigationBarTextStyle": "black",
