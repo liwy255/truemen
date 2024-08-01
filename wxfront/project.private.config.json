@@ -3,7 +3,9 @@
   "projectname": "verto",
   "setting": {
     "compileHotReLoad": true,
-    "urlCheck": false
+    "urlCheck": true,
+    "skylineRenderEnable": false
   },
-  "condition": {}
+  "condition": {},
+  "libVersion": "2.33.0"
 }

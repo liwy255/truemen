@@ -6,7 +6,7 @@ Component({
     active: "0",
     list: [
       {
-        pagePath: "pages/strategy/strategy",
+        pagePath: "/pages/strategy/strategy",
         text: "攻略路线",
         iconPath: "../images/icons/icon_strategy.png",
         selectedIconPath: "../images/icons/icon_strategy_light.png",
@@ -14,7 +14,7 @@ Component({
         selectedColor: "#F7AF0D",
       },
       {
-        pagePath: "pages/activity/activity",
+        pagePath: "/pages/activity/activity",
         text: "活动",
         iconPath: "../images/icons/icon_activity.png",
         selectedIconPath: "../images/icons/icon_activity_light.png",
@@ -22,7 +22,7 @@ Component({
         selectedColor: "#F7AF0D",
       },
       {
-        pagePath: "pages/index/index",
+        pagePath: "/pages/index/index",
         text: "首页",
         iconPath: "../images/icons/icon_index.png",
         selectedIconPath: "../images/icons/icon_index_light.png",
@@ -30,7 +30,7 @@ Component({
         selectedColor: "#C8102E",
       },
       {
-        pagePath: "pages/friend/friend",
+        pagePath: "/pages/friend/friend",
         text: "好友",
         iconPath: "../images/icons/icon_friend.png",
         selectedIconPath: "../images/icons/icon_friend_light.png",
@@ -38,7 +38,7 @@ Component({
         selectedColor: "#002FA7",
       },
       {
-        pagePath: "pages/myself/myself",
+        pagePath: "/pages/myself/myself",
         text: "个人主页",
         iconPath: "../images/icons/icon_myself.png",
         selectedIconPath: "../images/icons/icon_myself.png",
@@ -62,7 +62,7 @@ Component({
       const page = getCurrentPages().pop();
       this.setData({
         active: this.data.list.findIndex(
-          (item) => item.url === `/${page.route}`
+          (item) => item.pagePath === `/${page.route}`
         ),
       });
     },
