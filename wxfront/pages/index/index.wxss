@@ -1,16 +1,12 @@
 /**index.wxss**/
-.navbar {
-  flex-flow: row;
-}
-
 .search-bar__form {
   -webkit-box-flex: 1;
   background: #eeeeef;
-  border-radius: 20px;
+  border-radius: 40rpx; /* 使用 rpx 单位 */
   flex: auto;
   position: relative;
-  margin-left: 10px; /* 左边距 */
-  margin-right: 10px; /* 右边距 */
+  margin-left: 20rpx; /* 左边距改为 rpx */
+  margin-right: 20rpx; /* 右边距改为 rpx */
 }
 
 .search-bar__box {
@@ -18,8 +14,8 @@
   box-sizing: border-box;
   display: flex;
   flex-flow: row;
-  padding-left: 20rpx;
-  padding-right: 60rpx;
+  padding-left: 40rpx; /* 左内边距改为 rpx */
+  padding-right: 120rpx; /* 右内边距改为 rpx */
   position: relative;
   width: 100%;
   z-index: 1;
@@ -28,16 +24,27 @@
 .search-bar__input {
   height: 100%;
   line-height: 100%;
-  margin-left: 5px;
+  margin-left: 10rpx; /* 左边距改为 rpx */
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; /* 使容器填满整个屏幕高度 */
+.scroll-view-tab {
+  width: 100%;
+  overflow-x: auto;
 }
 
-.full-image {
-  flex-grow: 1; /* 使图片填满剩余空间 */
-  width: 100%; /* 图片宽度填满容器宽度 */
+.tab-item {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 36rpx; /* 设置圆角，使用 rpx */
+  margin: 10rpx 10rpx; /* 边距改为 rpx */
+  padding: 10rpx 20rpx; /* 内边距改为 rpx */
+  border: 0.5rpx solid #97979720; /* 边框颜色和透明度, 使用 rpx */
+  font-size: 24rpx; /* 字体大小改为 rpx */
+}
+
+.tab-icon {
+  width: 48rpx; /* 图标大小改为 rpx */
+  height: 48rpx; /* 图标高度改为 rpx */
+  margin-right: 10rpx; /* 图标和文字之间的间距改为 rpx */
 }
