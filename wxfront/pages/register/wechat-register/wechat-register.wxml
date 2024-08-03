@@ -1,0 +1,11 @@
+<!--pages/register/wechat-register/wechat-register.wxml-->
+<!-- pages/login/login.js -->
+<view class="container">
+  <image class="avatar" wx:if="{{hasUserInfo}}" :src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
+  <text class="nickname" wx:if="{{hasUserInfo}}">{{userInfo.nickName}}</text>
+  
+  <button open-type="getUserInfo" bindgetuserinfo="getUserProfile">授权登录</button>
+
+  <button class="agree-button" bindtap="agree">我来了</button>
+  <button class="disagree-button" bindtap="disagree">我婉拒</button>
+</view>

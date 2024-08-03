@@ -10,6 +10,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/register/phone-register/phone-register",
+          "pathName": "pages/register/phone-register/phone-register",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "pages/register/term-of-service/term-of-service",
           "pathName": "pages/register/term-of-service/term-of-service",
           "query": "",
