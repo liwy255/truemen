@@ -6,6 +6,25 @@
     "urlCheck": true,
     "skylineRenderEnable": false
   },
-  "condition": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/register/term-of-service/term-of-service",
+          "pathName": "pages/register/term-of-service/term-of-service",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/register/register",
+          "pathName": "pages/register/register",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
   "libVersion": "2.33.0"
 }

@@ -5,7 +5,9 @@
     "pages/activity/activity",
     "pages/friend/friend",
     "pages/myself/myself",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/register/register",
+    "pages/register/term-of-service/term-of-service"
   ],
   "window": {
     "navigationBarTextStyle": "black",

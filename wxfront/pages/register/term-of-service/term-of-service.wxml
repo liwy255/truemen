@@ -1,0 +1,21 @@
+<!--pages/register/term-of-service/term-of-service.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="back-button" bindtap="goBack"><text class="icon-back">&#x3C;</text></view>
+    <text class="title">用户服务协议</text>
+  </view>
+  <view class="content">
+    <scroll-view scroll-y="true" style="height: calc(100vh - 120rpx);">
+      <block wx:for="{{sections}}" wx:key="section">
+        <view class="section-header">{{item.title}}</view>
+        <view wx:for="{{item.content}}" wx:key="content" class="section-content">
+          {{item}}
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="footer">
+    <button type="primary" bindtap="agree">同意</button>
+    <button type="default" bindtap="disagree">不同意</button>
+  </view>
+</view>
