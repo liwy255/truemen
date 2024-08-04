@@ -1,66 +1,34 @@
 // pages/login/other-phone-login/other-phone-login.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    phoneNumber: '',
+    verificationCode: ''
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  onPhoneInput: function (event) {
+    this.setData({
+      phoneNumber: event.detail.value
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  onCodeInput: function (event) {
+    this.setData({
+      verificationCode: event.detail.value
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+  sendCode: function () {
+    // 发送验证码的逻辑
+    console.log('发送验证码');
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
+  switchToPasswordLogin: function () {
+    wx.navigateTo({
+      url: '/pages/password-login/password-login'
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  doLogin: function () {
+    if (this.data.phoneNumber && this.data.verificationCode) {
+      // 登录逻辑
+      console.log('登录');
+    } else {
+      console.log('请填写手机号和验证码');
+    }
   }
-})
+});

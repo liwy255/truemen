@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .logo {
@@ -31,19 +31,27 @@
   flex-direction: column;
   width: 80%;
 }
-.phone-btn{
-  width: 600rpx;
-  height: 100rpx;
-  border-radius: 45rpx;
-  margin-bottom: 30rpx;
-  background-color: #3190E8;
+.group-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
-.wechat-btn{
+.login-btn {
   width: 600rpx;
-  height: 100rpx;
+  height: 90rpx;
   border-radius: 45rpx;
   margin-bottom: 30rpx;
+}
+.wechat-btn {
   background-color: #4AC96F;
+  color: white;
+}
+
+.phone-btn {
+  background-color: #3190E8;
+  color: white;
 }
 .link{
   color:#4A3AFF;

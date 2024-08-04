@@ -10,6 +10,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/login/other-phone-login/other-phone-login",
+          "pathName": "pages/login/other-phone-login/other-phone-login",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "pages/term-of-service/term-of-service",
           "pathName": "pages/term-of-service/term-of-service",
           "query": "",

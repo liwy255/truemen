@@ -31,16 +31,6 @@
       <text class="description">把它当成一个小小的记忆测试吧</text>
     </view>
     <term-service bind:agreeChanged="onAgreeChange"></term-service>
-    <!-- <view class="checkbox-container">
-      <checkbox-group bindchange="onAgreeChange">
-        <label style="font-size: small;">
-          <checkbox value="agree" /> 我已经阅读并愿意遵守以下条款。
-          <navigator url="../../term-of-service/term-of-service" class="link">
-      《用户服务协议》
-    </navigator>
-        </label>
-      </checkbox-group>
-    </view> -->
     
     <button class="register-button" bindtap="onRegister" disabled="{{!isFormValid}}">我来了</button>
   </view>

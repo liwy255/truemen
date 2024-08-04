@@ -20,7 +20,7 @@ Component({
 
   methods: {
     onAgreeChange: function(e) {
-      console.warn('comp-term-sevice',e);
+      // console.warn('comp-term-sevice',e);
       const res=e.detail.value[0];
       this.setData({ agree: res === 'agree' });
       this.triggerEvent('agreeChanged',e.detail); // 触发事件
