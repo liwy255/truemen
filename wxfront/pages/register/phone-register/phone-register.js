@@ -24,15 +24,7 @@ Page({
       showPassword2: !this.data.showPassword2
     });
   },
-
-  onPhoneNumberChange: function(e) {
-    const phoneNumber = e.detail.value;
-    this.setData({
-      phoneNumber: phoneNumber,
-      phoneNumberValid: this.validatePhoneNumber(phoneNumber)
-    });
-  },
-
+  // 验证手机号
   validatePhoneNumber :function (phoneNumber) {
     // 中国手机号码的正则表达式
     const regex = /^(13[0-9]|14[5-9]|15[0-3,5-9]|16[6]|17[0-8]|18[0-9]|19[8,9])\d{8}$/;
@@ -46,36 +38,16 @@ Page({
       console.warn('手机号验证报错，需要代码修复');
     }
   },
-
-  onPasswordChange: function(e) {
-    const password = e.detail.value;
+  // 手机号修改
+  onPhoneNumberChange: function(e) {
+    const phoneNumber = e.detail.value;
     this.setData({
-      password: password,
-      passwordValid: this.validatePassword(password)
+      phoneNumber: phoneNumber,
+      phoneNumberValid: this.validatePhoneNumber(phoneNumber)
     });
-  },
-
-  onConfirmPasswordChange: function(e) {
-    const password = e.detail.value;
-    this.setData({
-      confirmPassword: password,
-      confirmPasswordValid:this.validateComfirmPassword(password)
-    });
-  },
-
-  onAgreeChange: function(e) {
-    this.setData({ agree: e.detail.value[0] === 'agree' });
     this.validateForm();
   },
-
-  validateForm: function() {
-    const { phoneNumberValid, passwordValid, confirmPasswordValid, agree } = this.data;
-    console.warn(phoneNumberValid,passwordValid,confirmPasswordValid,agree)
-    const isFormValid = phoneNumberValid && passwordValid && confirmPasswordValid && agree;
-    console.warn(isFormValid);
-    this.setData({ isFormValid });
-  },
-
+  // 验证密码
   validatePassword:function (password) {
     // 密码的正则表达式
     // 至少8位，包含数字和英文字母，不包含特殊符号
@@ -91,7 +63,20 @@ Page({
       console.warn('密码验证报错，需要代码修复');
     }
   },
-
+  // 密码修改
+  onPasswordChange: function(e) {
+    const password = e.detail.value;
+    this.setData({
+      password: password,
+      passwordValid: this.validatePassword(password)
+    });
+    this.setData({
+      confirmPasswordValid:this.validateComfirmPassword(this.data.confirmPassword)
+    });
+    // console.warn('password',this.data.password,this.data.confirmPassword,this.data.passwordValid,this.data.confirmPasswordValid);
+    this.validateForm();
+  },
+  // 验证二次密码
   validateComfirmPassword:function (password) {
     if(password===this.data.password && this.validatePassword(password)){
       return true;
@@ -99,6 +84,35 @@ Page({
       return false;
     }
   },
+  // 再次确认密码修改
+  onConfirmPasswordChange: function(e) {
+    const password = e.detail.value;
+    this.setData({
+      confirmPassword: password,
+      confirmPasswordValid:this.validateComfirmPassword(password)
+    });
+    // console.warn('password2',this.data.password,this.data.confirmPassword,this.data.passwordValid,this.data.confirmPasswordValid);
+    this.validateForm();
+  },
+
+  // 同意协议修改
+  onAgreeChange: function(e) {
+    // console.warn('page-phone-register',e);
+    this.setData({ agree: e.detail.value[0] === 'agree' });
+    // console.warn('agree?',this.data.agree);
+    this.validateForm();
+  },
+
+  // 验证所有表单
+  validateForm: function() {
+    const { phoneNumberValid, passwordValid, confirmPasswordValid, agree } = this.data;
+    // console.warn(phoneNumberValid,passwordValid,confirmPasswordValid,agree)
+    const isFormValid = phoneNumberValid && passwordValid && confirmPasswordValid && agree;
+    // console.warn(isFormValid);
+    this.setData({ isFormValid });
+  },
+
+  // 启动注册
   onRegister: function() {
       wx.showModal({
         title: '确认',

@@ -1,4 +1,4 @@
-// pages/register/term-of-service/term-of-service.js
+// pages/term-of-service/term-of-service.js
 Page({
   data: {
     sections: [

@@ -1,4 +1,4 @@
-<!--pages/register/term-of-service/term-of-service.wxml-->
+<!--pages/term-of-service/term-of-service.wxml-->
 <view class="container">
   <view class="content">
     <scroll-view scroll-y="true" style="height: calc(100vh - 120rpx);">
@@ -10,8 +10,4 @@
       </block>
     </scroll-view>
   </view>
-  <!-- <view class="footer">
-    <button type="primary" bindtap="agree">同意</button>
-    <button type="default" bindtap="disagree">不同意</button>
-  </view> -->
 </view>

@@ -10,15 +10,29 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/register/phone-register/phone-register",
-          "pathName": "pages/register/phone-register/phone-register",
+          "name": "pages/term-of-service/term-of-service",
+          "pathName": "pages/term-of-service/term-of-service",
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
-          "name": "pages/register/term-of-service/term-of-service",
-          "pathName": "pages/register/term-of-service/term-of-service",
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/register/wechat-register/wechat-register",
+          "pathName": "pages/register/wechat-register/wechat-register",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/register/phone-register/phone-register",
+          "pathName": "pages/register/phone-register/phone-register",
           "query": "",
           "launchMode": "default",
           "scene": null

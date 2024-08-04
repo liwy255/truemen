@@ -2,8 +2,29 @@
 <!-- <text>pages/login/login.wxml</text> -->
 <!-- pages/login/login.wxml -->
 <view class="container">
-  <!-- <image src="/images/logo.png" mode="aspectFill" class="logo"></image> -->
-  <view class="form">
+  <image src="../../images/register/register.webp" mode="aspectFit" class="logo"></image>
+  <text class="login-text">吉时已到，宜登录</text>
+  <text class="phone">{{phone}}</text>
+  <button class="phone-btn" bindtap="phoneLogin">使用该电话号码</button>
+  <button class="wechat-btn" bindtap="wechatLogin">微信</button>
+
+  <view>
+  <navigator url="./other-phone-login/other-phone-login" class="text-link">其他电话号码登录></navigator>
+  <navigator url="../register/register" class="text-link">创建新账号></navigator>
+</view>
+
+  
+  <view class="checkbox-container">
+      <checkbox-group bindchange="onAgreeChange">
+        <label style="font-size: small;">
+          <checkbox value="agree" /> 我已经阅读并愿意遵守以下条款。
+          <navigator url="../term-of-service/term-of-service" class="link">
+      《用户服务协议》
+    </navigator>
+        </label>
+      </checkbox-group>
+    </view>
+  <!-- <view class="form">
     <view class="input-group">
       <text class="iconfont icon-user"></text>
       <input type="text" placeholder="请输入用户名" bindinput="handleUsernameChange" />
@@ -13,5 +34,5 @@
       <input type="password" placeholder="请输入密码" bindinput="handlePasswordChange" />
     </view>
     <button bindtap="handleLogin" class="login-button">登录</button>
-  </view>
+  </view> -->
 </view>

@@ -6,7 +6,8 @@ Page({
    */
   data: {
     username: '',
-    password: ''
+    password: '',
+    phone:13512341234,
   },
   handleUsernameChange: function(e) {
     this.setData({

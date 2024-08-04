@@ -9,9 +9,21 @@
 }
 
 .logo {
-  width: 150rpx;
-  height: 150rpx;
-  margin-bottom: 30rpx;
+  width: 300rpx;
+  height: 300rpx;
+  margin-top: 200rpx;
+}
+
+.login-text {
+  font-size: 40rpx;
+  color: #3B4144;
+  margin: 50rpx 0;
+  margin-bottom: 20rpx;
+}
+.phone{
+  font-size: 40rpx;
+  color: #3B4144;
+  margin-bottom: 20rpx;
 }
 
 .form {
@@ -19,13 +31,35 @@
   flex-direction: column;
   width: 80%;
 }
-
+.phone-btn{
+  width: 600rpx;
+  height: 100rpx;
+  border-radius: 45rpx;
+  margin-bottom: 30rpx;
+  background-color: #3190E8;
+}
+.wechat-btn{
+  width: 600rpx;
+  height: 100rpx;
+  border-radius: 45rpx;
+  margin-bottom: 30rpx;
+  background-color: #4AC96F;
+}
+.link{
+  color:#4A3AFF;
+}
 .input-group {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ccc;
   padding: 10rpx 0;
   margin-bottom: 15rpx;
+}
+.text-link {
+  color: black; /* 设置字体颜色为黑色 */
+  font-size: small; /* 设置字体大小 */
+  text-decoration: none; /* 移除下划线 */
+  margin-bottom: 10rpx;
 }
 
 .iconfont {
