@@ -7,7 +7,6 @@
     </view>
   </view>
 </view>
-<!-- 正文 -->
 <scroll-view scroll-x="true" class="scroll-view-tab" style="white-space: nowrap;">
   <view class="tab-item" bindtap="onTabClick" data-index="0">
     <image src="../../images/icons/icon_tab_mystrategy.png" class="tab-icon"></image>
@@ -34,6 +33,10 @@
     <text>拍照</text>
   </view>
 </scroll-view>
-<view>
-  <map id="map" subkey="{{mapSubKey}}" longitude="{{longitude}}" latitude="{{latitude}}" style="width: 100vw; height: 100vh;" show-location="true" enable-building="true" enable-3D="true"></map>
+<!-- 在地图上添加一个圆形的定位按钮 -->
+<view class="map-container">
+  <map id="map" subkey="{{mapSubKey}}" longitude="{{longitude}}" latitude="{{latitude}}" style="width: 100vw; height: 80vh;" show-location="true" enable-building="true" enable-3D="true"></map>
+  <button class="location-btn" bindtap="moveToLocation">
+    <image src="../../images/icons/icon_tab_sport.png" class="location-icon"></image>
+  </button>
 </view>

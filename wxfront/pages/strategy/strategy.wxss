@@ -1,1 +1,60 @@
-/* pages/strategy/strategy.wxss */
+.list-container {
+  padding: 10px;
+  background-color: #f0f0f0; /* 背景色 */
+  height: 100vh;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px; /* 圆角边框 */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.left-part {
+  display: flex;
+  align-items: center;
+}
+
+.item-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px; /* 图片圆角 */
+  margin-right: 10px;
+}
+
+.item-title {
+  font-size: 16px;
+  color: #333;
+}
+
+.item-subtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+.right-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heart-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.detail-btn {
+  border: 1px solid #007aff;
+  border-radius: 15px;
+  padding: 5px 10px;
+  color: #007aff;
+  font-size: 14px;
+}
