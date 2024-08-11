@@ -1,2 +1,15 @@
-<!--pages/strategy/strategy.wxml-->
-<text>pages/strategy/strategy.wxml</text>
+<scroll-view scroll-y="true" class="list-container">
+    <block wx:for="{{items}}" wx:key="id">
+        <view class="item">
+            <view class="left-part">
+                <image class="item-image" src="{{item.imageUrl}}"></image>
+                <text class="item-title">{{item.title}}</text>
+                <text class="item-subtitle">{{item.subtitle}}</text>
+            </view>
+            <view class="right-part">
+                <button class="heart-btn">❤️</button>
+                <button class="detail-btn">查看详情</button>
+            </view>
+        </view>
+    </block>
+</scroll-view>
