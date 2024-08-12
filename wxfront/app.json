@@ -10,7 +10,8 @@
     "pages/term-of-service/term-of-service",
     "pages/register/phone-register/phone-register",
     "pages/register/wechat-register/wechat-register",
-    "pages/login/other-phone-login/other-phone-login"
+    "pages/login/other-phone-login/other-phone-login",
+    "pages/friend/friend-chat/friend-chat"
   ],
   "window": {
     "navigationBarTextStyle": "black",

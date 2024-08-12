@@ -10,6 +10,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/friend/friend",
+          "pathName": "pages/friend/friend",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "pages/login/other-phone-login/other-phone-login",
           "pathName": "pages/login/other-phone-login/other-phone-login",
           "query": "",
