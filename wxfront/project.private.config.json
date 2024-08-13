@@ -10,6 +10,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/friend/friend-chat/friend-chat",
+          "pathName": "pages/friend/friend-chat/friend-chat",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "pages/friend/friend",
           "pathName": "pages/friend/friend",
           "query": "",

@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarTitleText": "聊天对话窗",
+  "navigationBarBackgroundColor": "#FF6347",
+  "navigationBarTextStyle": "black",
+  "navigationStyle": "default",
+  "renderer": "cover-view"
 }
+  
