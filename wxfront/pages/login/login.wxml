@@ -2,16 +2,20 @@
 <!-- <text>pages/login/login.wxml</text> -->
 <!-- pages/login/login.wxml -->
 <view class="container">
-  <!-- <image src="/images/logo.png" mode="aspectFill" class="logo"></image> -->
-  <view class="form">
-    <view class="input-group">
-      <text class="iconfont icon-user"></text>
-      <input type="text" placeholder="请输入用户名" bindinput="handleUsernameChange" />
-    </view>
-    <view class="input-group">
-      <text class="iconfont icon-lock"></text>
-      <input type="password" placeholder="请输入密码" bindinput="handlePasswordChange" />
-    </view>
-    <button bindtap="handleLogin" class="login-button">登录</button>
-  </view>
+  <image src="../../images/register/register.webp" mode="aspectFit" class="logo"></image>
+  <text class="login-text">吉时已到，宜登录</text>
+  <text class="phone">{{phone}}</text>
+
+    <button class="login-btn phone-btn" bindtap="phoneLogin">使用该电话号码</button>
+  <button class="login-btn wechat-btn" bindtap="wechatLogin">微信</button>
+
+
+  <view>
+  <navigator url="./other-phone-login/other-phone-login" class="text-link">其他电话号码登录></navigator>
+  <navigator url="../register/register" class="text-link">创建新账号></navigator>
+</view>
+<!-- 用户协议 -->
+<term-service bind:agreeChanged="onAgreeChange"></term-service>
+  
+  
 </view>

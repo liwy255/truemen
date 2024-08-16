@@ -1,66 +1,24 @@
 // pages/friend/friend.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    currentTab: 0,
+    friends: [
+      { id: 1, name: '张三', avatar: 'https://example.com/avatar/zhangsan.jpg', latestMessage: '你好，最近怎么样？', time: '2023-09-01 10:30', unreadCount: 2 },
+      { id: 2, name: '李四', avatar: 'https://example.com/avatar/lisi.jpg', latestMessage: '今天天气不错！', time: '2023-09-02 12:45', unreadCount: 0 }
+    ],
+    groups: [
+      { id: 1, name: '朋友群', avatar: 'https://example.com/group/group1.jpg', latestMessage: '周末一起出去玩吧！', time: '2023-09-01 10:30', unreadCount: 5 },
+      { id: 2, name: '工作群', avatar: 'https://example.com/group/group2.jpg', latestMessage: '明天会议记得准备资料。', time: '2023-09-02 12:45', unreadCount: 0 }
+    ]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  switchTab: function (event) {
+    const tab = event.currentTarget.dataset.tab;
+    console.warn(tab);
+    this.setData({
+      currentTab: parseInt(tab)
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  addFriend: function () {
+    console.log('添加好友');
   }
-})
+});

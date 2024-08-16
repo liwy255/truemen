@@ -3,7 +3,70 @@
   "projectname": "verto",
   "setting": {
     "compileHotReLoad": true,
-    "urlCheck": false
+    "urlCheck": true,
+    "skylineRenderEnable": false
   },
-  "condition": {}
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/friend/friend-chat/friend-chat",
+          "pathName": "pages/friend/friend-chat/friend-chat",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/friend/friend",
+          "pathName": "pages/friend/friend",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/login/other-phone-login/other-phone-login",
+          "pathName": "pages/login/other-phone-login/other-phone-login",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/term-of-service/term-of-service",
+          "pathName": "pages/term-of-service/term-of-service",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/register/wechat-register/wechat-register",
+          "pathName": "pages/register/wechat-register/wechat-register",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/register/phone-register/phone-register",
+          "pathName": "pages/register/phone-register/phone-register",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/register/register",
+          "pathName": "pages/register/register",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "libVersion": "2.33.0"
 }

@@ -1,11 +1,42 @@
-<!-- index.wxml -->
-<!-- <navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">Weixin</view>
-  <van-tabbar active="{{ active }}" bind:change="onChange">
-    <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-    <van-tabbar-item icon="search">标签</van-tabbar-item>
-    <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-    <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
-  </van-tabbar>
-</scroll-view> -->
+<!-- pages/index/index.wxml -->
+<view style="height:{{m.height}}px;padding-top:{{s.statusBarHeight+(m.top-s.statusBarHeight)}}px;padding-bottom:{{(m.top-s.statusBarHeight)}}px;width:{{m.left}}px;">
+  <view bindtap="onSearch" class="search-bar__form">
+    <view class="search-bar__box" style="height: {{m.height}}px;">
+      <icon size="{{m.height/2+1}}" type="search"></icon>
+      <input class="search-bar__input" disabled="true" placeholder="搜索地点、活动、你感兴趣的地方" style="font-size: {{m.height/2.5}}px" type="text"></input>
+    </view>
+  </view>
+</view>
+<scroll-view scroll-x="true" class="scroll-view-tab" style="white-space: nowrap;">
+  <view class="tab-item" bindtap="onTabClick" data-index="0">
+    <image src="../../images/icons/icon_tab_mystrategy.png" class="tab-icon"></image>
+    <text>我的攻略</text>
+  </view>
+  <view class="tab-item" bindtap="onTabClick" data-index="1">
+    <image src="../../images/icons/icon_tab_createlandmark.png" class="tab-icon"></image>
+    <text>创建地标</text>
+  </view>
+  <view class="tab-item" bindtap="onTabClick" data-index="2">
+    <image src="../../images/icons/icon_tab_landscape.png" class="tab-icon"></image>
+    <text>景点</text>
+  </view>
+  <view class="tab-item" bindtap="onTabClick" data-index="3">
+    <image src="../../images/icons/icon_tab_food.png" class="tab-icon"></image>
+    <text>美食</text>
+  </view>
+  <view class="tab-item" bindtap="onTabClick" data-index="3">
+    <image src="../../images/icons/icon_tab_sport.png" class="tab-icon"></image>
+    <text>运动</text>
+  </view>
+  <view class="tab-item" bindtap="onTabClick" data-index="3">
+    <image src="../../images/icons/icon_tab_photo.png" class="tab-icon"></image>
+    <text>拍照</text>
+  </view>
+</scroll-view>
+<!-- 在地图上添加一个圆形的定位按钮 -->
+<view class="map-container">
+  <map id="map" subkey="{{mapSubKey}}" longitude="{{longitude}}" latitude="{{latitude}}" style="width: 100vw; height: 80vh;" show-location="true" enable-building="true" enable-3D="true"></map>
+  <button class="location-btn" bindtap="moveToLocation">
+    <image src="../../images/icons/icon_tab_sport.png" class="location-icon"></image>
+  </button>
+</view>

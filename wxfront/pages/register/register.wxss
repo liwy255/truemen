@@ -1,0 +1,42 @@
+/* pages/register/register.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.logo {
+  width: 300rpx;
+  height: 300rpx;
+  margin-top: 200rpx;
+}
+
+.register-text {
+  font-size: 40rpx;
+  color: #3B4144;
+  margin: 50rpx 0;
+}
+
+.register-btn {
+  width: 600rpx;
+  height: 90rpx;
+  border-radius: 45rpx;
+  margin-bottom: 30rpx;
+}
+
+.wechat-btn {
+  background-color: #4AC96F;
+  color: white;
+}
+
+.phone-btn {
+  background-color: #3190E8;
+  color: white;
+}
+
+.skip-btn {
+  background-color: #D8D8D8;
+  color: #3B4144;
+}

@@ -1,0 +1,8 @@
+<!--pages/register/register.wxml-->
+<view class="container">
+  <image src="../../images/register/register.webp" mode="aspectFit" class="logo"></image>
+  <text class="register-text">吉时已到，宜注册</text>
+  <button class="register-btn wechat-btn" bindtap="wechatRegister">微信注册</button>
+  <button class="register-btn phone-btn" bindtap="phoneRegister">手机号注册</button>
+  <button class="register-btn skip-btn" bindtap="skipRegister">就是要跳过</button>
+</view>
